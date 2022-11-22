@@ -29,6 +29,15 @@ public class MaquinaExpendedoraMejorada {
         totalDineroAcumulado = 0;
         estacionOrigen = "Mandril";
         estacionDestino = "Barcelona";
+        
+    }
+    public int vaciarDinero () {
+        int vaciarDinero = balanceClienteActual + totalDineroAcumulado;
+        balanceClienteActual = 0;
+        
+        totalDineroAcumulado = 0;
+        
+        return vaciarDinero;
     }
     /**
      * Devuelve el precio del billete
