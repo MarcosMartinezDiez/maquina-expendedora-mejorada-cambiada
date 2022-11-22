@@ -23,7 +23,13 @@ public class MaquinaExpendedoraMejorada {
         estacionOrigen = origen;
         estacionDestino = destino;
     }
-
+     public MaquinaExpendedoraMejorada() {
+        precioBillete = 45;
+        balanceClienteActual = 0;
+        totalDineroAcumulado = 0;
+        estacionOrigen = "Mandril";
+        estacionDestino = "Barcelona";
+    }
     /**
      * Devuelve el precio del billete
      */
