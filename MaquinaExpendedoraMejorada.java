@@ -32,7 +32,7 @@ public class MaquinaExpendedoraMejorada {
         totalDineroAcumulado = 0;
         estacionOrigen = "Mandril";
         estacionDestino = "Barcelona";
-        
+        numeroBilletesVendidos = 0;
     }
     public int vaciarDinero () {
         int vaciarDinero = balanceClienteActual + totalDineroAcumulado;
