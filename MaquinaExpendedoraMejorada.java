@@ -77,14 +77,15 @@ public class MaquinaExpendedoraMejorada {
      * Simula la introduccion de dinero por parte del cliente actual
      */
     public void introducirDinero(int cantidadIntroducida) {
-    if (maximoBilletes > numeroBilletesVendidos){
+        if (maximoBilletes > numeroBilletesVendidos){
             if (cantidadIntroducida > 0) {
-            balanceClienteActual = balanceClienteActual + cantidadIntroducida;
+                balanceClienteActual = balanceClienteActual + cantidadIntroducida;
             }
+        }
         else {
             System.out.println(cantidadIntroducida + " no es una cantidad de dinero valida.");
         }        
-    }
+    
 }
 
     /**
