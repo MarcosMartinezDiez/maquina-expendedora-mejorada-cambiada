@@ -80,13 +80,13 @@ public class MaquinaExpendedoraMejorada {
         if (maximoBilletes > numeroBilletesVendidos){
             if (cantidadIntroducida > 0) {
                 balanceClienteActual = balanceClienteActual + cantidadIntroducida;
+            
             }
-        }
         else {
             System.out.println(cantidadIntroducida + " no es una cantidad de dinero valida.");
-        }        
-    
-}
+            }        
+        }
+    }
 
     /**
      * Imprime un billete para el cliente actual
