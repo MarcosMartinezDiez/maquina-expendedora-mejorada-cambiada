@@ -99,7 +99,9 @@ public class MaquinaExpendedoraMejorada {
         if( maximoBilletes > numeroBilletesVendidos ){
             if (cantidadDeDineroQueFalta <= 0) { 
                 if (verPremio==true) {
-                    System.out.println("Has ganado un 25%" + (0.25 * precioBillete) +"de descuento(€) en el OF de la hermana de Mauro");
+                    if( numeroBilletesVendidos % 4 == 0 ){
+                        System.out.println("Enhorabuena has ganado un descuento de "+(precioBillete*0.25)+"€ en el OF de la hermana de Mauro.");
+                    }
                 }
                 // Simula la impresion de un billete
                 System.out.println("##################");
